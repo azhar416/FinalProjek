@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400&family=Trade+Winds&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body {
+    background: #e7f1ff;
+    color: #a0acb5;
+    letter-spacing: 1px;
+}
+
+.header {
+    border-radius: 0%;
+    /* width: calc(100% + 350px); */
+    /* position: absolute; */
+    right: 0;
+    height: auto;
+}
+
+.header .nama {
+    /* color: purple; */
+    font-size: 400%;
+    text-align: center;
+    padding: 50px 50px;
+    font-family: 'Trade Winds', cursive;
+}
+
+.header .role {
+    /* color: purple; */
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.header .institute {
+    /* color: purple; */
+    font-size: 150%;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.sec_mid {
+    width: auto;
+}
+
+.sec_mid .mid_left {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 125), -1px -1px 2px rgba(0, 0, 0, 125);
+    background-color: #fff;
+    /* border-radius: 3px; */
+    position: absolute;
+    left: 0px;
+    height: 418px;
+    width: 400px;
+}
+
+.foto {
+    left: 0;
+}
+
+.foto .gambar {
+    padding: 20px;
+    padding-left: 35px;
+    border-radius: 20%;
+}
+
+.sec_mid .mid_right {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 125), -1px -1px 2px rgba(0, 0, 0, 125);
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    height: 418px;
+    width: calc(100% - 400px);
+    padding: 30px;
+}
+
+.mid_right .title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #5558c9;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skills ul li {
+    padding: 0 5px 10px;
+    width: 33.32%;
+    height: 115px;
+}
+
+.skills ul li .skill_item {
+    background: #f2f4f5;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.skills ul li .skill_item .icon {
+    background: url('img/html.png') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 5px;
+}
+
+.skills ul li .skill_item.css .icon {
+    background: url('img/css.png') no-repeat 0 0;
+    height: 60px;
+}
+
+.skills ul li .skill_item.cpp .icon {
+    background: url('img/cpp.png') no-repeat 0 0;
+    height: 60px;
+}
+
+.skills ul li .skill_item.java .icon {
+    background: url('img/java.png') no-repeat 0 0;
+    height: 60px;
+}
+
+.skills ul li .skill_item.js .icon {
+    background: url('img/js.png') no-repeat 0 0;
+    height: 60px;
+}
+
+.skills ul li .skill_item.python .icon {
+    background: url('img/py.png') no-repeat 0 0;
+    height: 60px;
+}
+
+.mid_right .tabs ul {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dfe4e6;
+    border-radius: 3px;
+}
+
+.mid_right .tabs ul li {
+    padding: 10px 15px;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #dfe4e6;
+    background: #f2f4f5;
+    color: #a0acb5;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mid_right .tabs ul li:last-child {
+    border-right: 0px;
+}
+
+.mid_right .tabs ul li:hover,
+.mid_right .tabs ul li.active {
+    background: #fff;
+    color: #5558c9;
+}
+
+.full_info {
+    padding-top: 15px;
+    height: 295px;
+    overflow: auto;
+}
+
+.full_info .tulisan {
+    padding-left: 20px;
+    padding-top: 60px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.info_wrap {
+    padding-left: 20px;
+}
+
+.info_wrap ul li {
+    margin-bottom: 10px;
+}
+
+.info_wrap ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.info_wrap .sub_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #7377ff;
+}
+
+.exp .sub_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #7377ff;
+    padding-left: 20px;
+}
+
+.exp .info_item {
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+
+.info_wrap .info_item {
+    padding-left: 15px;
+    /* padding-top: 10px; */
+}
+
+.info_wrap .info_item .info_title {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-left: 60px;
+}
+
+.hobbies ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hobbies ul li {
+    padding: 0 5px 10px;
+    width: 33.32%;
+    height: 115px;
+}
+
+.hobbies ul li .hobbies_item {
+    background: #f2f4f5;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.hobbies ul li .hobbies_item .icon {
+    background: url('img/badminton1.jpg') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 5px;
+}
+
+.hobbies ul li .hobbies_item.gaming .icon {
+    background: url('img/pc1.jpg') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 5px;
+}
+
+.hobbies ul li .hobbies_item.music .icon {
+    background: url('img/music1.png') no-repeat 0 0;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 5px;
+}
+
+.contacts .info_wrap ul li span {
+    display: inline-block;
+}
+
+.contacts .info_wrap ul li span.info_q {
+    width: 150px;
+}
+
+.contacts .info_wrap ul li span.info_a {
+    font-size: 600;
+}
+
+.biodata .info_wrap ul li span {
+    display: inline-table;
+}
+
+.biodata .info_wrap ul li span.info_q {
+    width: 250px;
+}
+
+.biodata .info_wrap ul li span.info_a {
+    font-size: 600;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daffa M Azhar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".mid_right .tabs ul li").click(function() {
+                $(".mid_right .tabs ul li").removeClass("active");
+                $(this).addClass("active");
+
+                $(".full_info_item").hide();
+                var datali = $(this).attr("data-li");
+
+                if (datali == "about") {
+                    $(".about").show();
+                } else if (datali == "educations") {
+                    $(".education").show();
+                } else if (datali == "skills") {
+                    $(".skills").show();
+                } else if (datali == "exp") {
+                    $(".exp").show()
+                } else if (datali == "hobbies") {
+                    $(".hobbies").show();
+                } else if (datali == "contacts") {
+                    $(".contacts").show();
+                } else if (datali == "biodata") {
+                    $(".biodata").show();
+                } else {
+                    console.log("Loading...");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body class="body">
+    <!-- TOP HEADER -->
+    <div class="top">
+        <div class="header">
+            <!-- NAMA -->
+            <div class="nama">
+                DAFFA MUHAMAD AZHAR
+            </div>
+            <!-- JURUSAN -->
+            <div class="role">
+                MAHASISWA S1 TEKNIK INFORMATIKA
+            </div>
+            <!-- ITS -->
+            <div class="institute">
+                INSTITUT TEKNOLOGI SEPULUH NOPEMBER
+            </div>
+        </div>
+    </div>
+    <!-- End of Section Top -->
+
+    <!-- MIDDLE - BOT -->
+    <div class="sec_mid">
+        <!-- MIDDLE LEFT -->
+        <div class="mid_left">
+            <div class="foto">
+                <div class="gambar">
+                    <img src="img/foto2.jpg" alt="FOTO_PROFIL" class="gambar">
+                </div>
+            </div>
+            <div class="wrap_contact">
+
+            </div>
+        </div>
+
+        <!-- MIDDLE RIGHT -->
+        <div class="mid_right">
+            <div class="tabs">
+                <ul>
+                    <li data-li="about" class="active">ABOUT ME</li>
+                    <li data-li="biodata">BIODATA</li>
+                    <li data-li="educations">EDUCATIONS</li>
+                    <li data-li="skills">SKILLS</li>
+                    <li data-li="exp">EXPERIENCES</li>
+                    <li data-li="hobbies">HOBBIES</li>
+                    <li data-li="contacts">CONTACTS</li>
+                </ul>
+            </div>
+
+            <div class="full_info">
+                <div class="full_info_item about">
+                    <div class="title">ABOUT ME</div>
+                    <div>
+                        <p class="tulisan">
+                            Saya merupakan seorang mahasiswa semester ketiga S1 Jurusan Informatika di ITS dengan ambisi dan ketertarikan akan teknologi informasi yang tinggi. Saya juga seorang pekerja keras dan cerdas untuk menyelesaikan pekerjaan dengan cepat dan tepat sasaran.
+                            Saya sering belajar sesuatu sendiri jika itu menarik dan dibutuhkan.
+                        </p>
+                    </div>
+                </div>
+                <div class="full_info_item biodata" style="display: none;">
+                    <div class="title">BIODATA</div>
+                    <div class="info_wrap">
+                        <ul>
+                            <li>
+                                <span class="info_q">
+                                    Nama Lengkap
+                                </span>
+                                <span class="info_a">
+                                    Daffa Muhamad Azhar
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Nama Panggilan
+                                </span>
+                                <span class="info_a">
+                                    Azhar
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Tempat, Tanggal lahir
+                                </span>
+                                <span class="info_a">
+                                    Bogor, 30 Mei 2001
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Jenis Kelamin
+                                </span>
+                                <span class="info_a">
+                                    Laki - Laki
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Alamat
+                                </span>
+                                <span class="info_a">
+                                    Perum. IPB Alam Sinarsari JL. Kemangi IV D-10, Dramaga, Kab. Bogor,
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    
+                                </span>
+                                <span class="info_a">
+                                    Jawa Barat, 16680
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="full_info_item education" style="display: none;">
+                    <div class="title">
+                        EDUCATIONS
+                    </div>
+                    <div class="info_wrap">
+                        <ul>
+                            <li>
+                                <div class="sub_title">
+                                    2019 - Sekarang
+                                </div>
+                                <div class="info_item">
+                                    <div class="info_title">S1 Teknik Informatika - ITS</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_title">
+                                    2016 - 2019
+                                </div>
+                                <div class="info_item">
+                                    <div class="info_title">SMA Negeri 3 Bogor</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_title">
+                                    2013 - 2016
+                                </div>
+                                <div class="info_item">
+                                    <div class="info_title">SMP Negeri 4 Bogor</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="sub_title">
+                                    2007 - 2013
+                                </div>
+                                <div class="info_item">
+                                    <div class="info_title">SD Insan Kamil Bogor</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="full_info_item skills" style="display: none;">
+                    <div class="title">SKILLS</div>
+                    <ul>
+                        <li>
+                            <div class="skill_item cpp">
+                                <div class="icon"></div>
+                                <div class="text">C/C++</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_item java">
+                                <div class="icon"></div>
+                                <div class="text">Java</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_item python">
+                                <div class="icon"></div>
+                                <div class="text">Python</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_item html">
+                                <div class="icon"></div>
+                                <div class="text">HTML</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_item css">
+                                <div class="icon"></div>
+                                <div class="text">CSS</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill_item js">
+                                <div class="icon"></div>
+                                <div class="text">JavaScript</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="full_info_item exp" style="display: none;">
+                    <div class="title">EXPERIENCES</div>
+                    <ul>
+                        <li>
+                            <div class="sub_title">
+                                tahun1
+                            </div>
+                            <div class="info_item">
+                                ngapain1
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_title">
+                                tahun2
+                            </div>
+                            <div class="info_item">
+                                ngapain2
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sub_title">
+                                tahun3
+                            </div>
+                            <div class="info_item">
+                                ngapain3
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="full_info_item hobbies" style="display: none;">
+                    <div class="title">HOBBIES</div>
+                    <ul>
+                        <li>
+                            <div class="hobbies_item badminton">
+                                <div class="icon"></div>
+                                <div class="text">BADMINTON</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hobbies_item gaming">
+                                <div class="icon"></div>
+                                <div class="text">GAMING</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hobbies_item music">
+                                <div class="icon"></div>
+                                <div class="text">MUSIC</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="full_info_item contacts" style="display: none;">
+                    <div class="title">CONTACT</div>
+                    <div class="info_wrap">
+                        <ul>
+                            <li>
+                                <span class="info_q">
+                                    Whatsapp
+                                </span>
+                                <span class="info_a">
+                                    +62 813 8012 2568
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Email
+                                </span>
+                                <span class="info_a">
+                                    rar.azhar.416@gmail.com
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    LINE ID
+                                </span>
+                                <span class="info_a">
+                                    daffamma32332
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Facebook
+                                </span>
+                                <span class="info_a">
+                                    <a href="facebook.com/daffa.mazhar" target="_blank">facebook.com/daffa.mazhar</a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="info_q">
+                                    Instagram
+                                </span>
+                                <span class="info_a">
+                                    <a href="instagram.com/daffamma" target="_blank">instagram.com/daffamma</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Middle_Right -->
+        </div>
+        <!-- End of Middle -->
+    </div>
+</body>
+
+</html>
